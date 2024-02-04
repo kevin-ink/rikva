@@ -31,21 +31,23 @@ export default function NavBar() {
     rowStart,
     href = "",
   }: NavLinkProps) {
-    let cn = classNames("w-full h-9 flex text-sm justify-center items-center", {
-      [`row-start-${rowStart}`]: rowStart,
-      [`col-start-${colStart}`]: colStart,
+    let cn = classNames("w-fit h-9 flex text-sm justify-center items-center", {
       "text-xs": rowStart || colStart,
       "text-sm": !(rowStart || colStart),
     });
     return (
-      <Link href={href} className={cn}>
+      <div className={classNames('w-full', {
+      [`row-start-${rowStart}`]: rowStart,
+      [`col-start-${colStart}`]: colStart,})}> 
+        <Link href={href} className={cn}>
         <button
           onMouseEnter={onHover}
-          className={`h-fit w-fit text-slate-700 hover:text-sky-50 hover:cursor-pointer`}
+          className={`text-slate-700 hover:text-sky-50`}
         >
           {text}
         </button>
       </Link>
+      </div>
     );
   }
 
@@ -97,7 +99,7 @@ export default function NavBar() {
             <h1 className="w-fit h-fit hover:cursor-pointer">RIKVA</h1>
           </Link>
         </div>
-        <div className={`flex flex-row col-start-2 col-end-3`}>
+        <div className={`flex flex-row col-start-2 col-end-3 flex-grow-1 w-full`}>
           <NavLink text="Data" onHover={handleMouseEnter} />
           <NavLink text="Narrative" onHover={handleMouseEnter} />
           <NavLink text="Timeline" onHover={handleMouseEnter} />
