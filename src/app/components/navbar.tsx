@@ -31,12 +31,12 @@ export default function NavBar() {
     rowStart,
     href = "",
   }: NavLinkProps) {
-    let cn = classNames("w-fit h-9 flex text-sm justify-center items-center", {
+    let cn = classNames("w-fit h-9 flex text-sm items-center", {
       "text-xs": rowStart || colStart,
       "text-sm": !(rowStart || colStart),
     });
     return (
-      <div className={classNames('w-full', {
+      <div className={classNames('w-full flex justify-center', {
       [`row-start-${rowStart}`]: rowStart,
       [`col-start-${colStart}`]: colStart,})}> 
         <Link href={href} className={cn}>
@@ -99,7 +99,7 @@ export default function NavBar() {
             <h1 className="w-fit h-fit hover:cursor-pointer">RIKVA</h1>
           </Link>
         </div>
-        <div className={`flex flex-row col-start-2 col-end-3 flex-grow-1 w-full`}>
+        <div className={`flex flex-row col-start-2 col-end-3 w-full`}>
           <NavLink text="Data" onHover={handleMouseEnter} />
           <NavLink text="Narrative" onHover={handleMouseEnter} />
           <NavLink text="Timeline" onHover={handleMouseEnter} />
