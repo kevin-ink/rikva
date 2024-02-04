@@ -81,7 +81,7 @@ export default function NavBar() {
             ? "rgba(2, 132, 199, 1)"
             : "rgba(2, 132, 199, 0.75)",
         }}
-        className={`grid grid-cols-3 w-full h-full bg-sky-600/75`}
+        className={`grid grid-cols-3 w-full h-fit bg-sky-600/75`}
       >
         <h1 className="flex items-center col-start-1 col-end-2 pl-10 font-bold text-xl">
           RIKVA
