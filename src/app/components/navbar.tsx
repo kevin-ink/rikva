@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import classNames from "classnames";
+import Link from "next/link";
+import { Url } from "next/dist/shared/lib/router/router";
 
 export default function NavBar() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -14,14 +16,21 @@ export default function NavBar() {
     setDropdownVisible(true);
   };
 
-  type NavButtonProps = {
+  type NavLinkProps = {
     text?: string;
     onHover?: () => void;
     colStart?: number;
     rowStart?: number;
+    href?: Url;
   };
 
-  function NavButton({ text, onHover, colStart, rowStart }: NavButtonProps) {
+  function NavLink({
+    text,
+    onHover,
+    colStart,
+    rowStart,
+    href = "",
+  }: NavLinkProps) {
     let cn = classNames("w-full h-9 flex text-sm justify-center items-center", {
       [`row-start-${rowStart}`]: rowStart,
       [`col-start-${colStart}`]: colStart,
@@ -29,14 +38,14 @@ export default function NavBar() {
       "text-sm": !(rowStart || colStart),
     });
     return (
-      <div className={cn}>
+      <Link href={href} className={cn}>
         <button
           onMouseEnter={onHover}
-          className={`h-fit w-fit text-slate-700 hover:text-sky-50`}
+          className={`h-fit w-fit text-slate-700 hover:text-sky-50 hover:cursor-pointer`}
         >
           {text}
         </button>
-      </div>
+      </Link>
     );
   }
 
@@ -47,23 +56,23 @@ export default function NavBar() {
         animate={{ scaleY: 1, backgroundColor: "rgba(2, 132, 199, 1)" }}
         style={{ transformOrigin: "top" }}
         exit={{ scaleY: 0, opacity: 0.75 }}
-        className={`grid grid-cols-3 bg-sky-600`}
+        className={`grid grid-cols-3 bg-sky-600 shadow-[0_8px_6px_-6px_rgba(0,0,0,0.25)]`}
       >
         <div className={`grid col-start-2 col-end-3 grid-cols-4 grid-rows-3`}>
           {/*Data*/}
-          <NavButton text="Analysis" colStart={1} rowStart={1} />
+          <NavLink text="Analysis" colStart={1} rowStart={1} />
 
           {/* Narrative */}
-          <NavButton text="Background" colStart={2} rowStart={1} />
-          <NavButton text="Story" colStart={2} rowStart={2} />
+          <NavLink text="Background" colStart={2} rowStart={1} />
+          <NavLink text="Story" colStart={2} rowStart={2} />
 
           {/* Timeline */}
-          <NavButton text="Gallery" colStart={3} rowStart={1} />
+          <NavLink text="Gallery" colStart={3} rowStart={1} />
 
           {/*About*/}
-          <NavButton text="Team" colStart={4} rowStart={1} />
-          <NavButton text="Resources" colStart={4} rowStart={2} />
-          <NavButton text="Bibliography" colStart={4} rowStart={3} />
+          <NavLink text="Team" colStart={4} rowStart={1} />
+          <NavLink text="Resources" colStart={4} rowStart={2} />
+          <NavLink text="Bibliography" colStart={4} rowStart={3} />
         </div>
       </motion.div>
     );
@@ -81,16 +90,18 @@ export default function NavBar() {
             ? "rgba(2, 132, 199, 1)"
             : "rgba(2, 132, 199, 0.75)",
         }}
-        className={`grid grid-cols-3 w-full h-fit bg-sky-600/75`}
+        className={`grid grid-cols-3 w-full h-fit bg-sky-600/75 shadow-[0_8px_6px_-6px_rgba(0,0,0,0.25)]`}
       >
-        <h1 className="flex items-center col-start-1 col-end-2 pl-10 font-bold text-xl">
-          RIKVA
-        </h1>
+        <div className="flex items-center col-start-1 col-end-2 pl-10 font-bold text-xl">
+          <Link href={"/"}>
+            <h1 className="w-fit h-fit hover:cursor-pointer">RIKVA</h1>
+          </Link>
+        </div>
         <div className={`flex flex-row col-start-2 col-end-3`}>
-          <NavButton text="Data" onHover={handleMouseEnter} />
-          <NavButton text="Narrative" onHover={handleMouseEnter} />
-          <NavButton text="Timeline" onHover={handleMouseEnter} />
-          <NavButton text="About" onHover={handleMouseEnter} />
+          <NavLink text="Data" onHover={handleMouseEnter} />
+          <NavLink text="Narrative" onHover={handleMouseEnter} />
+          <NavLink text="Timeline" onHover={handleMouseEnter} />
+          <NavLink text="About" onHover={handleMouseEnter} />
         </div>
       </motion.div>
       <AnimatePresence>
