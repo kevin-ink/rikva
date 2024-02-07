@@ -1,5 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
+import { mdiTransferDown } from "@mdi/js";
+import Icon from '@mdi/react';
 
 const getRandomValue = (min: number, max: number) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
@@ -33,9 +35,25 @@ export default function AnimatedHeader() {
     },
   });
 
+  const arrowVariants = {
+    hidden : {
+      y: '-20%',
+      opacity: 0,
+    },
+    visible : {
+      y: '0%',
+      opacity: 1,
+      originY: 0,
+      transition: {
+        duration: 1,
+        delay: 2,
+      }
+    }
+  }
+
   return (
     <motion.div
-      className="flex flex-col pt-20 h-screen w-full justify-center items-center"
+      className="flex flex-col mt-32 mb-32 h-fit w-full items-center"
       variants={container}
       initial="hidden"
       animate="visible"
@@ -49,6 +67,9 @@ export default function AnimatedHeader() {
           {word}
         </motion.span>
       ))}
+      <motion.div initial="hidden" animate="visible" variants={arrowVariants}>
+          <Icon path={mdiTransferDown} className="mt-32 w-screen mb-32 " size={10} />
+      </motion.div>
     </motion.div>
   );
 }

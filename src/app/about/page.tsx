@@ -3,10 +3,9 @@ import AnimatedHeader from "./animatedHeader";
 
 export default function About() {
   return (
-    <div className="flex flex-col h-screen items-center w-screen">
+    <div className="flex flex-col h-auto items-center max-w-screen min-h-screen">
       <AnimatedHeader />
-      <div className="h-48"></div>
-      <div className="flex flex-row justify-center w-10/12 h-fit border-2 rounded ">
+      <div className="flex flex-row w-10/12 justify-between h-fit">
         <SimpleProfile />
         <SimpleProfile />
         <SimpleProfile />

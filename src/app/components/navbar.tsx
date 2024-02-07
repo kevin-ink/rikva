@@ -65,13 +65,9 @@ export default function NavBar() {
         <Link href={href} className={cn}>
         <button
           onMouseEnter={onHover}
-<<<<<<< HEAD
-          className={`text-slate-700 hover:text-sky-50`}
-=======
           onClick={disableHover}
           onMouseLeave={enableHover}
           className={`h-fit w-fit text-slate-700 hover:text-sky-50 hover:cursor-pointer`}
->>>>>>> eb67121b8dbc96a0e2a1faa3898c5d6b0281b6a9
         >
           {text}
         </button>
