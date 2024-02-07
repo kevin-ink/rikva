@@ -4,16 +4,39 @@ import { AnimatePresence, motion } from "framer-motion";
 import classNames from "classnames";
 import Link from "next/link";
 import { Url } from "next/dist/shared/lib/router/router";
+import { usePathname } from "next/navigation";
 
 export default function NavBar() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
+  const [ignoreHover, setIgnoreHover] = useState(false);
+  const pathname: string = usePathname();
+
+  type pathToNameMap = {
+    [key: string]: string;
+  };
+
+  const pathToName: pathToNameMap = {
+    "/": "RIKVA",
+    "/about": "ABOUT",
+  };
 
   const handleMouseLeave = () => {
     setDropdownVisible(false);
   };
 
   const handleMouseEnter = () => {
-    setDropdownVisible(true);
+    if (!ignoreHover) {
+      setDropdownVisible(true);
+    }
+  };
+
+  const disableHover = () => {
+    setDropdownVisible(false);
+    setIgnoreHover(true);
+  };
+
+  const enableHover = () => {
+    setIgnoreHover(false);
   };
 
   type NavLinkProps = {
@@ -29,7 +52,7 @@ export default function NavBar() {
     onHover,
     colStart,
     rowStart,
-    href = "",
+    href = "/",
   }: NavLinkProps) {
     let cn = classNames("w-fit h-9 flex text-sm items-center", {
       "text-xs": rowStart || colStart,
@@ -42,7 +65,13 @@ export default function NavBar() {
         <Link href={href} className={cn}>
         <button
           onMouseEnter={onHover}
+<<<<<<< HEAD
           className={`text-slate-700 hover:text-sky-50`}
+=======
+          onClick={disableHover}
+          onMouseLeave={enableHover}
+          className={`h-fit w-fit text-slate-700 hover:text-sky-50 hover:cursor-pointer`}
+>>>>>>> eb67121b8dbc96a0e2a1faa3898c5d6b0281b6a9
         >
           {text}
         </button>
@@ -96,14 +125,25 @@ export default function NavBar() {
       >
         <div className="flex items-center col-start-1 col-end-2 pl-10 font-bold text-xl">
           <Link href={"/"}>
-            <h1 className="w-fit h-fit hover:cursor-pointer">RIKVA</h1>
+            <h1 className="w-fit h-fit hover:cursor-pointer">
+              {pathToName[pathname] === "RIKVA" ? (
+                pathToName[pathname]
+              ) : (
+                <>
+                  RIKVA
+                  <span className="ml-8 opacity-20">
+                    /{pathToName[pathname]}
+                  </span>
+                </>
+              )}
+            </h1>
           </Link>
         </div>
         <div className={`flex flex-row col-start-2 col-end-3 w-full`}>
           <NavLink text="Data" onHover={handleMouseEnter} />
           <NavLink text="Narrative" onHover={handleMouseEnter} />
           <NavLink text="Timeline" onHover={handleMouseEnter} />
-          <NavLink text="About" onHover={handleMouseEnter} />
+          <NavLink text="About" href={"/about"} onHover={handleMouseEnter} />
         </div>
       </motion.div>
       <AnimatePresence>
