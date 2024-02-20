@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import classNames from "classnames";
 import Link from "next/link";
@@ -10,15 +10,6 @@ export default function NavBar() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [ignoreHover, setIgnoreHover] = useState(false);
   const pathname: string = usePathname();
-
-  type pathToNameMap = {
-    [key: string]: string;
-  };
-
-  const pathToName: pathToNameMap = {
-    "/": "RIKVA",
-    "/about": "ABOUT",
-  };
 
   const handleMouseLeave = () => {
     setDropdownVisible(false);
@@ -59,19 +50,23 @@ export default function NavBar() {
       "text-sm": !(rowStart || colStart),
     });
     return (
-      <div className={classNames('w-full flex justify-center', {
-      [`row-start-${rowStart}`]: rowStart,
-      [`col-start-${colStart}`]: colStart,})}> 
+      <div
+        className={classNames("w-full flex justify-center", {
+          [`row-start-${rowStart}`]: rowStart,
+          [`col-start-${colStart}`]: colStart,
+        })}
+      >
         <Link href={href} className={cn}>
-        <button
-          onMouseEnter={onHover}
-          onClick={disableHover}
-          onMouseLeave={enableHover}
-          className={`h-fit w-fit text-slate-700 hover:text-sky-50 hover:cursor-pointer`}
-        >
-          {text}
-        </button>
-      </Link>
+          <button
+            onMouseEnter={onHover}
+            onClick={disableHover}
+            onMouseLeave={enableHover}
+            className={`h-fit w-fit text-slate-700 hover:text-sky-50 hover:cursor-pointer
+            ${pathname === href && href !== `/` ? `text-white` : ``}`}
+          >
+            {text}
+          </button>
+        </Link>
       </div>
     );
   }
@@ -121,18 +116,7 @@ export default function NavBar() {
       >
         <div className="flex items-center col-start-1 col-end-2 pl-10 font-bold text-xl">
           <Link href={"/"}>
-            <h1 className="w-fit h-fit hover:cursor-pointer">
-              {pathToName[pathname] === "RIKVA" ? (
-                pathToName[pathname]
-              ) : (
-                <>
-                  RIKVA
-                  <span className="ml-8 opacity-20">
-                    /{pathToName[pathname]}
-                  </span>
-                </>
-              )}
-            </h1>
+            <h1 className="w-fit h-fit hover:cursor-pointer">RIKVA</h1>
           </Link>
         </div>
         <div className={`flex flex-row col-start-2 col-end-3 w-full`}>

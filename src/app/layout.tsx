@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/navbar";
+import { Inter, DM_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+export const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+export const dm_sans = DM_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-dm_sans",
+});
 
 export const metadata: Metadata = {
   title: "RIKVA Website",
@@ -17,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${dm_sans.variable} ${inter.variable}`}>
         <NavBar />
         {children}
       </body>

@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+        dm_sans: ['var(--font-dm_sans)'],
+      },
+      spacing: {
+        '500vh': '500vh',
+      }
     },
   },
   plugins: [
