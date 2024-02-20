@@ -17,7 +17,7 @@ const variants = {
 export default function Acknowledgements() {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    threshold: 0.6,
+    threshold: 0.5,
     triggerOnce: true,
   });
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function Acknowledgements() {
       initial={"hidden"}
       animate={controls}
       ref={ref}
-      className="bg-neutral-400/25 row-start-1 p-6 border-2 border-white row-end-3 col-start-3 col-end-4 bg-sky-300/50 rounded-lg"
+      className="bg-neutral-200 row-start-1 p-6 border-2 border-white row-end-3 col-start-3 col-end-4 bg-sky-300/50 rounded-lg"
     >
       <h1 className="font-inter text-2xl text-black text-center font-bold">
         Acknowledgements
