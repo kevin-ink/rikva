@@ -5,19 +5,19 @@ import { motion } from "framer-motion";
 
 const variants = {
   hidden: {
-    x: -100,
+    y: 100,
     opacity: 0,
   },
   visible: {
-    x: 0,
+    y: 0,
     opacity: 1,
   },
 };
 
-export default function FAQ() {
+export default function BibFooter() {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    threshold: 0.6,
+    threshold: 0.8,
     triggerOnce: true,
   });
   useEffect(() => {
@@ -26,15 +26,18 @@ export default function FAQ() {
     }
   }, [controls, inView]);
   return (
-    <motion.div
+    <motion.h1
+      id="bib"
       variants={variants}
       initial={"hidden"}
       animate={controls}
       ref={ref}
-      id="faq"
-      className="row-start-1 border-2 border-white p-6 row-end-3 col-start-1 col-end-3 bg-sky-300/50 rounded-lg"
+      className="p-10 text-lg font-dm_sans row-start-3 row-end-4 border-2 rounded border-white col-start-1 col-end-4 bg-teal-200/50"
     >
-      <h1 className="font-inter text-2xl text-center font-bold">FAQ</h1>
-    </motion.div>
+      Looking for the annotated bibliography?
+      <button className="hover:text-teal-600 pl-2">
+        <u>click here!</u>
+      </button>
+    </motion.h1>
   );
 }

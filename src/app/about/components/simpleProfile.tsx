@@ -58,8 +58,8 @@ export default function SimpleProfile({ name, role, pos }: SimpleProfileProps) {
         height={250}
       />
       <div className="flex flex-col">
-        <span className="text-sm text-left">{name}</span>
-        <span className="text-xs text-right">{role}</span>
+        <span className="text-sm font-comfortaa text-left">{name}</span>
+        <span className="text-xs font-roboto_mono text-right">{role}</span>
       </div>
     </motion.div>
   );

@@ -11,9 +11,11 @@ const config: Config = {
       fontFamily: {
         inter: ['var(--font-inter)'],
         dm_sans: ['var(--font-dm_sans)'],
+        roboto_mono: ['var(--font-roboto_mono)'],
+        comfortaa: ['var(--font-comfortaa)']
       },
       spacing: {
-        '500vh': '500vh',
+        '600vh': '600vh',
       }
     },
   },

@@ -10,14 +10,6 @@ const nextConfig = {
       },
     ],
   },
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ["var(--font-inter)"],
-        mono: ["var(--font-roboto-mono)"],
-      },
-    },
-  },
 };
 
 export default nextConfig;

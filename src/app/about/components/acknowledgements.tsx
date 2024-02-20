@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const variants = {
   hidden: {
-    x: -100,
+    x: 100,
     opacity: 0,
   },
   visible: {
@@ -14,10 +14,10 @@ const variants = {
   },
 };
 
-export default function FAQ() {
+export default function Acknowledgements() {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    threshold: 0.6,
+    threshold: 0.8,
     triggerOnce: true,
   });
   useEffect(() => {
@@ -31,10 +31,11 @@ export default function FAQ() {
       initial={"hidden"}
       animate={controls}
       ref={ref}
-      id="faq"
-      className="row-start-1 border-2 border-white p-6 row-end-3 col-start-1 col-end-3 bg-sky-300/50 rounded-lg"
+      className="bg-neutral-200 row-start-1 p-6 border-2 border-white row-end-3 col-start-3 col-end-4 bg-sky-300/50 rounded-lg"
     >
-      <h1 className="font-inter text-2xl text-center font-bold">FAQ</h1>
+      <h1 className="font-inter text-2xl text-black text-center font-bold">
+        Acknowledgements
+      </h1>
     </motion.div>
   );
 }
