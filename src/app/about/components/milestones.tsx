@@ -10,7 +10,7 @@ import { useState } from "react";
 export default function Milestones() {
   const { scrollY } = useScroll();
   const [activeMilestone, setActiveMilestone] = useState(0);
-  const [progress, setProgress] = useState(670);
+  const [progress, setProgress] = useState(0);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     console.log(latest);
@@ -38,7 +38,7 @@ export default function Milestones() {
         From start to finish:
         <motion.div
           style={{ width: `${progress}%` }}
-          className="h-2 bg-black max-w-full"
+          className="h-2 bg-black w-0 max-w-full"
         ></motion.div>
       </h1>
       <div className="sticky top-1/4 w-screen h-96">
@@ -74,7 +74,7 @@ export default function Milestones() {
                     </h1>
                     <p className="h-4/6">{milestoneContent[i]["content"]}</p>
                     <button className="text-neutral-500 hover:text-white font-bold hover:bg-sky-500 font-inter mt-4 m-auto shadow-md w-fit pl-2 pr-2 bg-sky-200 rounded">
-                      READ THE DOCS
+                      READ THE DOC
                     </button>
                   </motion.div>
                 ))}
