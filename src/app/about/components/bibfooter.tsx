@@ -32,7 +32,7 @@ export default function BibFooter() {
       initial={"hidden"}
       animate={controls}
       ref={ref}
-      className="p-10 text-lg font-dm_sans row-start-3 row-end-4 border-2 rounded border-white col-start-1 col-end-4 bg-sky-200/50"
+      className="p-10 text-lg font-dm_sans row-start-3 row-end-4 border-2 rounded border-white col-start-1 drop-shadow-lg col-end-4 bg-sky-200"
     >
       Looking for the annotated bibliography?
       <button className="hover:text-teal-600 pl-2">

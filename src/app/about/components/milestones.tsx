@@ -8,19 +8,19 @@ import {
 import { useState } from "react";
 
 export default function Milestones() {
-  const { scrollY } = useScroll();
+  const { scrollYProgress } = useScroll();
   const [activeMilestone, setActiveMilestone] = useState(0);
   const [progress, setProgress] = useState(0);
 
-  useMotionValueEvent(scrollY, "change", (latest) => {
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
     console.log(latest);
-    setProgress(((latest - 630) / 570) * 100);
+    setProgress(((latest - 0.12) / (0.24 - 0.12)) * 100);
     const milestones = [
-      { limit: 1550, milestone: 1 },
-      { limit: 2140, milestone: 2 },
-      { limit: 2730, milestone: 3 },
-      { limit: 3320, milestone: 4 },
-      { limit: 3910, milestone: 5 },
+      { limit: 0.26, milestone: 1 },
+      { limit: 0.4, milestone: 2 },
+      { limit: 0.51, milestone: 3 },
+      { limit: 0.72, milestone: 4 },
+      { limit: 0.83, milestone: 5 },
       { limit: Infinity, milestone: 6 },
     ];
 
@@ -33,9 +33,7 @@ export default function Milestones() {
   });
 
   return (
-    <div
-      className="h-600vh pt-10 pb-10 font-dm_sans bg-gradient-to-r from-sky-100 to-sky-200"
-    >
+    <div className="h-600vh pt-10 pb-10 font-dm_sans bg-gradient-to-r from-sky-100 to-sky-200">
       <h1 className="m-auto flex flex-col pt-32 pb-32 font-roboto_mono font-bold w-fit text-3xl">
         From start to finish:
         <motion.div

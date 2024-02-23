@@ -28,7 +28,7 @@ export default function AnimatedHeader() {
 
   return (
     <motion.div
-      className="flex flex-col bg-flight-pattern bg-center bg-fixed bg-cover pt-32 pb-16 h-fit w-full items-center"
+      className="flex flex-col z-10 pt-32 pb-16 h-fit w-full items-center"
       variants={container}
       id="team"
       initial="hidden"
