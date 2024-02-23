@@ -42,7 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${dm_sans.variable} ${inter.variable} ${roboto_mono.variable}
-        ${comfortaa.variable}`}
+        ${comfortaa.variable} bg-gradient-to-b from-sky-100 to-white`}
       >
         <NavBar />
         {children}

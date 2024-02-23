@@ -33,7 +33,9 @@ export default function Milestones() {
   });
 
   return (
-    <div className="h-600vh pt-10 pb-10 font-dm_sans bg-gradient-to-r from-sky-100 to-sky-200">
+    <div
+      className="h-600vh pt-10 pb-10 font-dm_sans bg-gradient-to-r from-sky-100 to-sky-200"
+    >
       <h1 className="m-auto flex flex-col pt-32 pb-32 font-roboto_mono font-bold w-fit text-3xl">
         From start to finish:
         <motion.div
@@ -42,7 +44,7 @@ export default function Milestones() {
         ></motion.div>
       </h1>
       <div className="sticky top-1/4 w-screen h-96">
-        <div className="flex flex-row  items-center h-96 justify-around w-full p-5">
+        <div className="flex flex-row items-center h-96 justify-around w-full p-5">
           <LayoutGroup>
             <ul className={`space-y-2 text-1xl text-center`}>
               {milestoneIDs.map((i) => (

@@ -80,25 +80,22 @@ export default function NavBar() {
         exit={{ scaleY: 0, opacity: 0.75 }}
         className={`grid grid-cols-3 bg-sky-600 shadow-[0_8px_6px_-6px_rgba(0,0,0,0.25)]`}
       >
-        <div className={`grid col-start-2 col-end-3 grid-cols-4 grid-rows-3`}>
+        <div className={`grid col-start-2 col-end-3 grid-cols-3 grid-rows-3`}>
           {/*Data*/}
           <NavLink text="Analysis" colStart={1} rowStart={1} />
 
           {/* Narrative */}
           <NavLink text="Background" colStart={2} rowStart={1} />
           <NavLink text="Story" colStart={2} rowStart={2} />
-
-          {/* Timeline */}
-          <NavLink text="Gallery" colStart={3} rowStart={1} />
+          <NavLink text="Timeline" colStart={2} rowStart={3} />
 
           {/*About*/}
-          <NavLink text="Team" href={"/about#team"} colStart={4} rowStart={1} />
-          <NavLink text="FAQ" href={"/about#faq"} colStart={4} rowStart={2} />
+          <NavLink text="FAQ" href={"/about#faq"} colStart={3} rowStart={1} />
           <NavLink
             text="Bibliography"
             href={"/about#bib"}
-            colStart={4}
-            rowStart={3}
+            colStart={3}
+            rowStart={2}
           />
         </div>
       </motion.div>
@@ -127,7 +124,6 @@ export default function NavBar() {
         <div className={`flex flex-row col-start-2 col-end-3 w-full`}>
           <NavLink text="Data" onHover={handleMouseEnter} />
           <NavLink text="Narrative" onHover={handleMouseEnter} />
-          <NavLink text="Timeline" onHover={handleMouseEnter} />
           <NavLink text="About" href={"/about"} onHover={handleMouseEnter} />
         </div>
       </motion.div>

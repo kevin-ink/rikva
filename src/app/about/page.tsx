@@ -9,9 +9,9 @@ import BibFooter from "./components/bibfooter";
 
 export default function About() {
   return (
-    <div className="flex flex-col h-auto items-center max-w-screen min-h-screen">
+    <div className="flex flex-col bg-flight-pattern bg-center bg-fixed bg-cover h-auto w-screen items-center max-w-screen min-h-screen">
       <AnimatedHeader />
-      <div className="flex pl-32 pr-32 flex-row w-full justify-between pt-32 pb-32 h-fit">
+      <div className="flex pl-32 bg-sky-100/75 pr-32 flex-row w-full justify-between pt-32 pb-32 h-fit">
         {profiles.map((profile: Profile, index: number) => (
           <SimpleProfile
             key={index}
@@ -22,10 +22,7 @@ export default function About() {
         ))}
       </div>
       <Milestones />
-      <div
-        id="FAQ"
-        className="p-10 grid grid-rows-3 grid-cols-3 w-full h-screen"
-      >
+      <div className="p-10 bg-white grid grid-rows-3 grid-cols-3 w-full h-screen">
         <FAQ />
         <Acknowledgements />
         <BibFooter />

@@ -27,14 +27,16 @@ export default function FAQ() {
   }, [controls, inView]);
   return (
     <motion.div
+      id="faq"
       variants={variants}
       initial={"hidden"}
       animate={controls}
       ref={ref}
-      id="faq"
       className="row-start-1 border-2 border-white p-6 row-end-3 col-start-1 col-end-3 bg-sky-300/50 rounded-lg"
     >
-      <h1 className="font-inter text-2xl text-center font-bold">FAQ</h1>
+      <h1 className="font-inter text-2xl text-center font-bold">
+        Additional FAQ:
+      </h1>
     </motion.div>
   );
 }

@@ -1,14 +1,11 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 export default function AnimatedHeader() {
   const phrase = ["Meet", "the", "Team."];
-  const [isMounted, setIsMounted] = useState(false);
 
   const container = {
-    hidden: { opacity: 0 },
+    hidden: {},
     visible: {
-      opacity: 1,
       transition: {
         delay: 0.5,
         staggerChildren: 0.12,
@@ -31,7 +28,7 @@ export default function AnimatedHeader() {
 
   return (
     <motion.div
-      className="flex flex-col bg-gradient-to-b from-sky-200 to-white pt-32 pb-16 h-fit w-full items-center"
+      className="flex flex-col bg-flight-pattern bg-center bg-fixed bg-cover pt-32 pb-16 h-fit w-full items-center"
       variants={container}
       id="team"
       initial="hidden"
@@ -39,7 +36,7 @@ export default function AnimatedHeader() {
     >
       {phrase.map((word, index) => (
         <motion.h1
-          className="text-9xl drop-shadow-lg bg-gradient-to-b bg-clip-text text-transparent from-blue-600 to-green-400"
+          className="text-9xl drop-shadow-xl text-sky-600"
           variants={randomChildVariants()}
           key={index}
         >

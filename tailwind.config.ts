@@ -16,6 +16,9 @@ const config: Config = {
       },
       spacing: {
         '600vh': '600vh',
+      },
+      backgroundImage: {
+        'flight-pattern': "url('images/flightPath.svg')",
       }
     },
   },
