@@ -28,7 +28,7 @@ export default function About() {
         className="w-screen h-screen t-0 bg-sky-100 absolute"
       ></motion.div>
       <AnimatedHeader />
-      <div className="flex pl-32 pr-32 flex-row w-full justify-between pt-32 pb-32 h-fit">
+      <div className="flex pl-32 pr-32 flex-row w-full justify-between bg-sky-100 pt-32 pb-32 h-fit">
         {profiles.map((profile: Profile, index: number) => (
           <SimpleProfile
             key={index}
