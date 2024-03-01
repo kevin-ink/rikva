@@ -31,7 +31,7 @@ export default function Acknowledgements() {
       initial={"hidden"}
       animate={controls}
       ref={ref}
-      className="bg-sky-400 row-start-1 p-6 border-2 border-white drop-shadow-lg row-end-3 col-start-3 col-end-4 rounded-lg"
+      className="bg-sky-400 row-start-1 p-6 border-2 border-white drop-shadow-lg row-end-3 col-start-3 col-end-4"
     >
       <h1 className="font-inter text-2xl text-black text-center font-bold">
         Acknowledgements

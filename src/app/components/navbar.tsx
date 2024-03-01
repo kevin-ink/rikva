@@ -90,13 +90,8 @@ export default function NavBar() {
           <NavLink text="Timeline" colStart={2} rowStart={3} />
 
           {/*About*/}
-          <NavLink text="FAQ" href={"/about#faq"} colStart={3} rowStart={1} />
-          <NavLink
-            text="Bibliography"
-            href={"/about#bib"}
-            colStart={3}
-            rowStart={2}
-          />
+          <NavLink text="FAQ" colStart={3} rowStart={1} />
+          <NavLink text="Bibliography" colStart={3} rowStart={2} />
         </div>
       </motion.div>
     );

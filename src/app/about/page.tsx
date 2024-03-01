@@ -11,7 +11,7 @@ import Footer from "../components/footer";
 
 export default function About() {
   return (
-    <div className="flex flex-col bg-flight-pattern bg-center bg-fixed bg-cover h-auto w-screen items-center max-w-screen min-h-screen">
+    <div className="flex flex-col bg-flight-pattern bg-bottom bg-fixed bg-cover h-auto w-screen items-center max-w-screen min-h-screen">
       <motion.div
         initial={{ scaleX: 1 }}
         animate={{
@@ -40,9 +40,9 @@ export default function About() {
       </div>
       <Milestones />
       <div className="p-10 bg-white grid grid-rows-3 grid-cols-3 w-full h-screen">
-        <FAQ />
+        {/* <FAQ />
         <Acknowledgements />
-        <BibFooter />
+        <BibFooter /> */}
       </div>
       <Footer />
     </div>

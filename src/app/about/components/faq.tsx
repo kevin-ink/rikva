@@ -32,7 +32,7 @@ export default function FAQ() {
       initial={"hidden"}
       animate={controls}
       ref={ref}
-      className="row-start-1 border-2 border-white p-6 row-end-3 col-start-1 col-end-3 bg-sky-300 drop-shadow-md rounded-lg"
+      className="row-start-1 border-2 border-white p-6 row-end-3 col-start-1 col-end-3 bg-sky-300 drop-shadow-md"
     >
       <h1 className="font-inter text-2xl text-center font-bold">FAQ</h1>
     </motion.div>

@@ -16,12 +16,12 @@ export default function Milestones() {
     console.log(latest);
     setProgress(((latest - 0.12) / (0.24 - 0.12)) * 100);
     const milestones = [
-      { limit: 0.26, milestone: 1 },
-      { limit: 0.4, milestone: 2 },
-      { limit: 0.51, milestone: 3 },
-      { limit: 0.72, milestone: 4 },
-      { limit: 0.83, milestone: 5 },
-      { limit: Infinity, milestone: 6 },
+      { limit: 0.26, milestone: 3 },
+      { limit: 0.4, milestone: 4 },
+      { limit: 0.51, milestone: 5 },
+      { limit: 0.72, milestone: 6 },
+      { limit: 0.83, milestone: 7 },
+      { limit: Infinity, milestone: 8 },
     ];
 
     const activeMilestone = milestones.find(
@@ -35,7 +35,7 @@ export default function Milestones() {
   return (
     <div className="h-600vh pt-10 pb-10 font-dm_sans bg-gradient-to-r from-sky-100 to-sky-200">
       <h1 className="m-auto flex flex-col pt-32 pb-32 font-roboto_mono font-bold w-fit text-3xl">
-        From start to finish:
+        Important Milestones:
         <motion.div
           style={{ width: `${progress}%` }}
           className="h-2 bg-black w-0 max-w-full"
@@ -93,18 +93,8 @@ interface MilestoneContent {
   };
 }
 
-const milestoneIDs = [1, 2, 3, 4, 5, 6];
+const milestoneIDs = [3, 4, 5, 6, 7, 8];
 const milestoneContent: MilestoneContent = {
-  1: {
-    header: "Top Dataset Choices",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies tincidunt venenatis. Pellentesque ac semper nulla. Pellentesque eleifend orci non dolor vestibulum, dignissim porttitor orci sollicitudin. Duis maximus sodales pharetra. Maecenas eget tincidunt mauris. Praesent ultrices ipsum sed velit blandit, vitae blandit nunc venenatis. Donec at ex ac purus pharetra placerat. Praesent vitae magna rhoncus, scelerisque risus vitae, consequat ipsum. In hendrerit odio a velit elementum, sed commodo augue mollis. Donec varius interdum ex non condimentum. Quisque quis nisi et mauris fermentum maximus id iaculis sapien.",
-  },
-  2: {
-    header: "Project Charter",
-    content:
-      "Praesent ultricies tincidunt venenatis. Pellentesque ac semper nulla. Pellentesque eleifend orci non dolor vestibulum, dignissim porttitor orci sollicitudin. Duis maximus sodales pharetra. Maecenas eget tincidunt mauris. Praesent ultrices ipsum sed velit blandit, vitae blandit nunc venenatis. Donec at ex ac purus pharetra placerat. Praesent vitae magna rhoncus, scelerisque risus vitae, consequat ipsum. In hendrerit odio a velit elementum, sed commodo augue mollis. Donec varius interdum ex non condimentum. Quisque quis nisi et mauris fermentum maximus id iaculis sapien.",
-  },
   3: {
     header: "Draft Research Questions",
     content:
@@ -113,15 +103,25 @@ const milestoneContent: MilestoneContent = {
   4: {
     header: "Data Critique",
     content:
-      "Pellentesque ac semper nulla. Pellentesque eleifend orci non dolor vestibulum, dignissim porttitor orci sollicitudin. Duis maximus sodales pharetra. Maecenas eget tincidunt mauris. Praesent ultrices ipsum sed velit blandit, vitae blandit nunc venenatis. Donec at ex ac purus pharetra placerat. Praesent vitae magna rhoncus, scelerisque risus vitae, consequat ipsum. In hendrerit odio a velit elementum, sed commodo augue mollis. Donec varius interdum ex non condimentum. Quisque quis nisi et mauris fermentum maximus id iaculis sapien.",
+      "Praesent ultricies tincidunt venenatis. Pellentesque ac semper nulla. Pellentesque eleifend orci non dolor vestibulum, dignissim porttitor orci sollicitudin. Duis maximus sodales pharetra. Maecenas eget tincidunt mauris. Praesent ultrices ipsum sed velit blandit, vitae blandit nunc venenatis. Donec at ex ac purus pharetra placerat. Praesent vitae magna rhoncus, scelerisque risus vitae, consequat ipsum. In hendrerit odio a velit elementum, sed commodo augue mollis. Donec varius interdum ex non condimentum. Quisque quis nisi et mauris fermentum maximus id iaculis sapien.",
   },
   5: {
     header: "Annotated Bilbliography",
     content:
-      "Pellentesque eleifend orci non dolor vestibulum, dignissim porttitor orci sollicitudin. Duis maximus sodales pharetra. Maecenas eget tincidunt mauris. Praesent ultrices ipsum sed velit blandit, vitae blandit nunc venenatis. Donec at ex ac purus pharetra placerat. Praesent vitae magna rhoncus, scelerisque risus vitae, consequat ipsum. In hendrerit odio a velit elementum, sed commodo augue mollis. Donec varius interdum ex non condimentum. Quisque quis nisi et mauris fermentum maximus id iaculis sapien.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies tincidunt venenatis. Pellentesque ac semper nulla. Pellentesque eleifend orci non dolor vestibulum, dignissim porttitor orci sollicitudin. Duis maximus sodales pharetra. Maecenas eget tincidunt mauris. Praesent ultrices ipsum sed velit blandit, vitae blandit nunc venenatis. Donec at ex ac purus pharetra placerat. Praesent vitae magna rhoncus, scelerisque risus vitae, consequat ipsum. In hendrerit odio a velit elementum, sed commodo augue mollis. Donec varius interdum ex non condimentum. Quisque quis nisi et mauris fermentum maximus id iaculis sapien.",
   },
   6: {
     header: "Sample Data Visualizations",
+    content:
+      "Pellentesque ac semper nulla. Pellentesque eleifend orci non dolor vestibulum, dignissim porttitor orci sollicitudin. Duis maximus sodales pharetra. Maecenas eget tincidunt mauris. Praesent ultrices ipsum sed velit blandit, vitae blandit nunc venenatis. Donec at ex ac purus pharetra placerat. Praesent vitae magna rhoncus, scelerisque risus vitae, consequat ipsum. In hendrerit odio a velit elementum, sed commodo augue mollis. Donec varius interdum ex non condimentum. Quisque quis nisi et mauris fermentum maximus id iaculis sapien.",
+  },
+  7: {
+    header: "Website Wireframes",
+    content:
+      "Pellentesque eleifend orci non dolor vestibulum, dignissim porttitor orci sollicitudin. Duis maximus sodales pharetra. Maecenas eget tincidunt mauris. Praesent ultrices ipsum sed velit blandit, vitae blandit nunc venenatis. Donec at ex ac purus pharetra placerat. Praesent vitae magna rhoncus, scelerisque risus vitae, consequat ipsum. In hendrerit odio a velit elementum, sed commodo augue mollis. Donec varius interdum ex non condimentum. Quisque quis nisi et mauris fermentum maximus id iaculis sapien.",
+  },
+  8: {
+    header: "Draft of Website Narrative",
     content:
       "Duis maximus sodales pharetra. Maecenas eget tincidunt mauris. Praesent ultrices ipsum sed velit blandit, vitae blandit nunc venenatis. Donec at ex ac purus pharetra placerat. Praesent vitae magna rhoncus, scelerisque risus vitae, consequat ipsum. In hendrerit odio a velit elementum, sed commodo augue mollis. Donec varius interdum ex non condimentum. Quisque quis nisi et mauris fermentum maximus id iaculis sapien.",
   },
