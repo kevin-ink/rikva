@@ -28,7 +28,7 @@ export default function Home() {
         <img
           src={currentImage}
           alt="airplane frames"
-          className="sticky top-0 w-full h-auto"
+          className="sticky top-0 max-w-screen h-auto"
         />
       </motion.div>
     </main>
