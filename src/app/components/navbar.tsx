@@ -62,7 +62,11 @@ export default function NavBar() {
             onClick={disableHover}
             onMouseLeave={enableHover}
             className={`h-fit w-fit text-slate-700 hover:text-sky-50 hover:cursor-pointer
-            ${pathname === href && href !== `/` ? `text-white` : ``}`}
+            ${
+              pathname === href && href !== `/` && href !== "/WIP"
+                ? `text-white`
+                : ``
+            }`}
           >
             {text}
           </button>
@@ -97,16 +101,21 @@ export default function NavBar() {
             colStart={1}
             rowStart={1}
           />
-          <NavLink text="Data" colStart={1} rowStart={2} />
+          <NavLink text="Data" href={"/WIP"} colStart={1} rowStart={2} />
 
           {/*Narrative*/}
-          <NavLink text="RQ1" colStart={2} rowStart={1} />
-          <NavLink text="RQ2" colStart={2} rowStart={2} />
-          <NavLink text="RQ3" colStart={2} rowStart={3} />
+          <NavLink text="RQ1" href={"/RQ1"} colStart={2} rowStart={1} />
+          <NavLink text="RQ2" href={"/RQ2"} colStart={2} rowStart={2} />
+          <NavLink text="RQ3" href={"/WIP"} colStart={2} rowStart={3} />
 
           {/*About*/}
           <NavLink text="The Team" href={"/bios"} colStart={3} rowStart={1} />
-          <NavLink text="Bibliography" colStart={3} rowStart={2} />
+          <NavLink
+            text="Bibliography"
+            href={"/WIP"}
+            colStart={3}
+            rowStart={2}
+          />
         </div>
       </motion.div>
     );
@@ -131,8 +140,8 @@ export default function NavBar() {
           </Link>
         </div>
         <div className={`flex flex-row col-start-2 col-end-3 w-full`}>
-          <NavLink text="Background" onHover={handleMouseEnter} />
-          <NavLink text="Narrative" onHover={handleMouseEnter} />
+          <NavLink text="Background" href={"/WIP"} onHover={handleMouseEnter} />
+          <NavLink text="Narrative" href={"/WIP"} onHover={handleMouseEnter} />
           <NavLink text="About" href={"/about"} onHover={handleMouseEnter} />
         </div>
       </motion.div>

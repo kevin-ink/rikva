@@ -1,5 +1,6 @@
 import { profiles, Profile } from "../about/profiles";
 import FullProfile from "./components/fullProfile";
+import Link from "next/link";
 
 export default function Bios() {
   return (
@@ -10,9 +11,14 @@ export default function Bios() {
         ))}
         <button></button>
       </div>
-      <button className="mt-8 font-roboto_mono text-center w-full hover:text-sky-700 hover:underline text-2xl">
-        Return to About Page
-      </button>
+      <Link href="/about" passHref>
+        <button
+          type="button"
+          className="mt-8 font-roboto_mono text-center w-full hover:text-sky-700 hover:underline text-2xl"
+        >
+          Return to About Page
+        </button>
+      </Link>
     </div>
   );
 }
