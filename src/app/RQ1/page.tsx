@@ -7,21 +7,23 @@ export default function RQ1() {
   const tableauVizRef = useRef<HTMLDivElement>(null);
   const tableauVizRef2 = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    if (!tableauVizRef.current || !tableauVizRef2.current) return;
-    const viz = new TableauViz();
-    viz.src =
-      "https://public.tableau.com/views/lax_pollution/Sheet1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link";
-    tableauVizRef.current.appendChild(viz);
-    const viz_2 = new TableauViz();
-    viz_2.src =
-      "https://public.tableau.com/views/poverty_intensity/Sheet1?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link";
-    tableauVizRef2.current.appendChild(viz_2);
-    const tableau_ref = tableauVizRef.current;
-    const tableau_ref2 = tableauVizRef2.current;
-    return () => {
-      tableau_ref.innerHTML = "";
-      tableau_ref2.innerHTML = "";
-    };
+    if (typeof window !== "undefined") {
+      if (!tableauVizRef.current || !tableauVizRef2.current) return;
+      const viz = new TableauViz();
+      viz.src =
+        "https://public.tableau.com/views/lax_pollution/Sheet1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link";
+      tableauVizRef.current.appendChild(viz);
+      const viz_2 = new TableauViz();
+      viz_2.src =
+        "https://public.tableau.com/views/poverty_intensity/Sheet1?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link";
+      tableauVizRef2.current.appendChild(viz_2);
+      const tableau_ref = tableauVizRef.current;
+      const tableau_ref2 = tableauVizRef2.current;
+      return () => {
+        tableau_ref.innerHTML = "";
+        tableau_ref2.innerHTML = "";
+      };
+    }
   }, []);
 
   return (
