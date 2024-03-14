@@ -141,7 +141,11 @@ export default function NavBar() {
         </div>
         <div className={`flex flex-row col-start-2 col-end-3 w-full`}>
           <NavLink text="Background" href={"/WIP"} onHover={handleMouseEnter} />
-          <NavLink text="Narrative" href={"/WIP"} onHover={handleMouseEnter} />
+          <NavLink
+            text="Narrative"
+            href={"/narrative"}
+            onHover={handleMouseEnter}
+          />
           <NavLink text="About" href={"/about"} onHover={handleMouseEnter} />
         </div>
       </motion.div>
