@@ -1,4 +1,4 @@
-import { profiles, Profile } from "../about/profiles";
+import { profiles, Profile } from "../profiles";
 import FullProfile from "./components/fullProfile";
 import Link from "next/link";
 
