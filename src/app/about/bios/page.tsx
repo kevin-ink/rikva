@@ -16,7 +16,7 @@ export default function Bios() {
           type="button"
           className="mt-8 font-roboto_mono text-center w-full hover:text-sky-700 hover:underline text-2xl"
         >
-          Return to About Page
+          Return to About Page &gt;
         </button>
       </Link>
     </div>

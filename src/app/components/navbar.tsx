@@ -104,12 +104,27 @@ export default function NavBar() {
           <NavLink text="Data" href={"/WIP"} colStart={1} rowStart={2} />
 
           {/*Narrative*/}
-          <NavLink text="RQ1" href={"/RQ1"} colStart={2} rowStart={1} />
-          <NavLink text="RQ2" href={"/RQ2"} colStart={2} rowStart={2} />
+          <NavLink
+            text="RQ1"
+            href={"/narrative/RQ1"}
+            colStart={2}
+            rowStart={1}
+          />
+          <NavLink
+            text="RQ2"
+            href={"/narrative/RQ2"}
+            colStart={2}
+            rowStart={2}
+          />
           <NavLink text="RQ3" href={"/WIP"} colStart={2} rowStart={3} />
 
           {/*About*/}
-          <NavLink text="The Team" href={"/bios"} colStart={3} rowStart={1} />
+          <NavLink
+            text="The Team"
+            href={"/about/bios"}
+            colStart={3}
+            rowStart={1}
+          />
           <NavLink
             text="Bibliography"
             href={"/WIP"}
