@@ -4,12 +4,11 @@ import AnimatedHeader from "./animatedHeader";
 import { profiles, Profile } from "./profiles";
 import Milestones from "./components/milestones";
 import { motion } from "framer-motion";
-import Footer from "../components/footer";
 
 export default function About() {
   return (
     <div className="flex flex-col h-auto w-screen items-center max-w-screen min-h-screen">
-      <div className="bg-flight-pattern bg-bottom bg-fixed bg-cover w-screen h-screen">
+      <div className="bg-flight-pattern bg-bottom bg-fixed bg-cover w-screen">
         <motion.div
           initial={{ scaleX: 1 }}
           animate={{
@@ -23,7 +22,7 @@ export default function About() {
           style={{
             originX: 1,
           }}
-          className="w-screen h-screen t-0 bg-sky-100 absolute"
+          className="w-screen h-screen bg-sky-100 absolute t-0"
         ></motion.div>
         <AnimatedHeader />
       </div>
@@ -43,7 +42,6 @@ export default function About() {
         <Acknowledgements />
         <BibFooter /> */}
       </div>
-      <Footer />
     </div>
   );
 }

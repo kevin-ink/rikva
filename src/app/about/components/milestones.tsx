@@ -14,7 +14,7 @@ export default function Milestones() {
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     console.log(latest);
-    setProgress(((latest - 0.12) / (0.24 - 0.12)) * 100);
+    setProgress(((latest - 0.099) / (0.21 - 0.099)) * 100);
     const milestones = [
       { limit: 0.26, milestone: 3 },
       { limit: 0.4, milestone: 4 },

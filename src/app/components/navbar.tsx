@@ -5,7 +5,6 @@ import classNames from "classnames";
 import Link from "next/link";
 import { Url } from "next/dist/shared/lib/router/router";
 import { usePathname } from "next/navigation";
-import { MenuToggle } from "./menuToggle";
 
 export default function NavBar() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -92,7 +91,12 @@ export default function NavBar() {
       >
         <div className={`grid col-start-2 col-end-3 grid-cols-3 grid-rows-3`}>
           {/*Background*/}
-          <NavLink text="Timeline" colStart={1} rowStart={1} />
+          <NavLink
+            text="Timeline"
+            href={"/timeline"}
+            colStart={1}
+            rowStart={1}
+          />
           <NavLink text="Data" colStart={1} rowStart={2} />
 
           {/*Narrative*/}
@@ -101,7 +105,7 @@ export default function NavBar() {
           <NavLink text="RQ3" colStart={2} rowStart={3} />
 
           {/*About*/}
-          <NavLink text="The Team" colStart={3} rowStart={1} />
+          <NavLink text="The Team" href={"/bios"} colStart={3} rowStart={1} />
           <NavLink text="Bibliography" colStart={3} rowStart={2} />
         </div>
       </motion.div>
@@ -110,7 +114,7 @@ export default function NavBar() {
   return (
     <div
       onMouseLeave={handleMouseLeave}
-      className={`fixed flex flex-col w-screen h-auto z-10`}
+      className={`fixed flex flex-col w-screen h-auto z-20`}
     >
       <motion.div
         initial={false}

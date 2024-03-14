@@ -19,6 +19,7 @@ const config: Config = {
       },
       backgroundImage: {
         'flight-pattern': "url('/flightPath.svg')",
+        'triangle-down': "url('/TriangleArrow-Down.svg')",
       }
     },
   },
