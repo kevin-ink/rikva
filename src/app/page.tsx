@@ -80,7 +80,8 @@ export default function Home() {
             src={currentImage}
             alt="Airplane frames"
             style={{ objectFit: "cover" }}
-            unoptimized={true}
+            unoptimized
+            priority
           />
           <AnimatePresence>
             {quote && (
