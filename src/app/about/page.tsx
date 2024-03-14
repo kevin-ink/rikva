@@ -4,9 +4,6 @@ import AnimatedHeader from "./animatedHeader";
 import { profiles, Profile } from "./profiles";
 import Milestones from "./components/milestones";
 import { motion } from "framer-motion";
-import FAQ from "./components/faq";
-import Acknowledgements from "./components/acknowledgements";
-import BibFooter from "./components/bibfooter";
 import Footer from "../components/footer";
 
 export default function About() {

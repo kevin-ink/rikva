@@ -1,10 +1,11 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import classNames from "classnames";
 import Link from "next/link";
 import { Url } from "next/dist/shared/lib/router/router";
 import { usePathname } from "next/navigation";
+import { MenuToggle } from "./menuToggle";
 
 export default function NavBar() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -71,6 +72,15 @@ export default function NavBar() {
     );
   }
 
+  // const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  // useEffect(() => {
+  //   function handleResize() {
+  //     setIsMobile(window.innerWidth < 768);
+  //   }
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
+
   function Dropdown() {
     return (
       <motion.div
@@ -81,22 +91,22 @@ export default function NavBar() {
         className={`grid grid-cols-3 bg-sky-600 shadow-[0_8px_6px_-6px_rgba(0,0,0,0.25)]`}
       >
         <div className={`grid col-start-2 col-end-3 grid-cols-3 grid-rows-3`}>
-          {/*Data*/}
-          <NavLink text="Analysis" colStart={1} rowStart={1} />
+          {/*Background*/}
+          <NavLink text="Timeline" colStart={1} rowStart={1} />
+          <NavLink text="Data" colStart={1} rowStart={2} />
 
-          {/* Narrative */}
-          <NavLink text="Background" colStart={2} rowStart={1} />
-          <NavLink text="Story" colStart={2} rowStart={2} />
-          <NavLink text="Timeline" colStart={2} rowStart={3} />
+          {/*Narrative*/}
+          <NavLink text="RQ1" colStart={2} rowStart={1} />
+          <NavLink text="RQ2" colStart={2} rowStart={2} />
+          <NavLink text="RQ3" colStart={2} rowStart={3} />
 
           {/*About*/}
-          <NavLink text="FAQ" colStart={3} rowStart={1} />
+          <NavLink text="The Team" colStart={3} rowStart={1} />
           <NavLink text="Bibliography" colStart={3} rowStart={2} />
         </div>
       </motion.div>
     );
   }
-
   return (
     <div
       onMouseLeave={handleMouseLeave}
@@ -117,7 +127,7 @@ export default function NavBar() {
           </Link>
         </div>
         <div className={`flex flex-row col-start-2 col-end-3 w-full`}>
-          <NavLink text="Data" onHover={handleMouseEnter} />
+          <NavLink text="Background" onHover={handleMouseEnter} />
           <NavLink text="Narrative" onHover={handleMouseEnter} />
           <NavLink text="About" href={"/about"} onHover={handleMouseEnter} />
         </div>

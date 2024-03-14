@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "./components/navbar";
 import { Inter, DM_Sans, Roboto_Mono, Comfortaa } from "next/font/google";
+import { useState } from "react";
 
 const inter = Inter({
   subsets: ["latin"],

@@ -63,7 +63,7 @@ export default function Milestones() {
               ))}
             </ul>
           </LayoutGroup>
-          <div className="w-7/12 h-full bg-white border-white border-2 shadow-sm rounded p-2">
+          <div className="w-7/12 h-96 bg-white border-white border-2 shadow-sm rounded p-2">
             <AnimatePresence mode={"wait"}>
               {milestoneIDs
                 .filter((i) => activeMilestone === i)

@@ -18,7 +18,7 @@ const config: Config = {
         '600vh': '600vh',
       },
       backgroundImage: {
-        'flight-pattern': "url('images/flightPath.svg')",
+        'flight-pattern': "url('/flightPath.svg')",
       }
     },
   },
