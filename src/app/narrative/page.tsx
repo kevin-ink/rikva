@@ -32,103 +32,106 @@ export default function Narrative() {
         Place in Literature
       </h1>
       <p className="mt-16 w-9/12 m-auto text-lg">
-        &emsp;In addition to causing minority groups to be stuck in surrounding
-        areas that suffer from noise pollution, airports also create the
-        immobility of certain travelers as they go through the standardized
-        process prior to enplanement, despite its initial intention of
-        facilitating transportation. This is because airports don’t serve solely
-        as the medium for transportation and tourism, there are also ideological
-        attributes and national security considerations associated with the
-        platform.
+        &emsp;Upon browsing the scholarly web for any literature on airport
+        noise and air pollution, we were met with dismal results. To our
+        surprise, there were very few articles published specifically about
+        airport air and noise pollution, with many published ones dating back to
+        the 1990s, which do not represent the state of aircraft today. It is
+        therefore difficult to grasp current scholarly opinions on the topic of
+        air and noise pollution. However, scholars generally agree that air
+        pollution and noise pollution from airports is an issue to surrounding
+        communities especially communities downwind from the airport. However,
+        most of the scholarly literature is very scientifically oriented and
+        does not discuss the more humanistic aspects of airport pollution. This
+        is why our group seeks to contextualize the impact of pollution in a
+        humanistic way by asking questions about how the pollution may impact
+        the livelihoods of the local communities and how they may not be able to
+        escape the pollution themselves, with government regulations being their
+        only option. We would like to acknowledge though that airport-specific
+        pollution data is very hard to track because airports consequently
+        create very busy roads and car traffic which contribute to local
+        pollution around the airport. Thus, there remain questions about whether
+        airplanes are emitting more pollution than the cars that drive in and
+        out of the airport, and whether regulations should be focused on road
+        traffic or airplane traffic in regards to reducing air pollution.
         <br /> <br />
-        &emsp;Simply put, a common process before boarding includes checking in
-        at the airline’s counter, going through security checks, and then
-        proceeding to the boarding gate. While one may perceive this as a smooth
-        flow of a 3-step procedure, the dynamics of interrogation and being
-        interrogated create an imbalance of power status that disproportionately
-        affects some groups of travelers than others, and the denial to fly and
-        documented profiling hampers both their current and future mobility.
-        Therefore, while acknowledging the necessity of safety checks to ensure
-        broader safety for passengers, it is important to bring awareness to the
-        unique struggles some marginalized groups face during their experience
-        of air travel.
+        &emsp;For discrimination experiences during air travel, we are also
+        surprised to find out there is very limited publicly available data
+        directly collecting unfair treatment during air travel experiences and
+        passengers’ demographic information, nor scholarly articles that
+        directly discuss such a topic. However, we were able to scrape the data
+        from the Bureau of Transportation Statistics’s annual air travel
+        consumer reports from 2014 to 2018 on discrimination complaints and
+        thereby probe into the silenced communities who experience bias and
+        prejudices during air travel. Sex minorities, such as transgender and
+        LGBT-Q people are very susceptible to additional scrutiny and
+        interrogations because Paisley and Mulqueen found in 2011 that any
+        mismatch between their gender representation and document ID will be
+        viewed as an anomaly, which will trigger an advanced level of
+        investigation. In addition, research studies by Gillum (2018) and
+        analysis by the Council on American-Islamic Relationships (2022)
+        targeting Muslim Americans show that such a group is very much impacted
+        in terms of travel options and mobility due to national security acts as
+        well as social stigmatization post 9-11 era. Those pieces of literature
+        serve as supporting evidence to our arguments regarding reduced mobility
+        by flights as well as discrimination during air travel processes.
+      </p>
+      <h1 className="w-full h-48 font-inter text-4xl flex flex-row items-center justify-center text-center bg-sky-500 mt-32">
+        Significance
+      </h1>
+      <p className="mt-16 w-9/12 m-auto text-lg">
+        &emsp;&emsp;This project is important since we want to show how air
+        traffic reveals the disparities in discrimination within marginalized
+        communities while also perpetuating and reinforcing these inequalities.
+        The complex interaction between airport operations and community
+        well-being is something we want to help others understand as a way to
+        address the need for equitable and sustainable policies for airports and
+        air travel. Our research questions tackle the gaps in the understanding
+        of how airports affect their surroundings and the people who use them,
+        and we want our research to contribute to a more comprehensive
+        understanding of the environmental and societal challenges that airports
+        create by focusing on the humanistic aspects of airport pollution and
+        discrimination in air travel.
         <br />
         <br />
-        &emsp;Since there is very little openly available data on passengers’
-        demographics, possibly due to privacy protection reasons, we supplement
-        our data with the annual report from the same agency (Bureau of
-        Transportation Statistics) to probe into what groups are potentially
-        more susceptible impacted by discrimination. The data was scraped from
-        the “Complaints about Discrimination” section in annual air travel
-        consumer reports from 2014 to 2018. It is worth noting that the Bureau
-        of Transportation Statistics did not report the complaints by type until
-        2016. (Interestingly, there is a surge in the total complaints from 2015
-        to 2016, which is when categorization starts to take place.)
-      </p>
-      <p className="mt-16 w-9/12 m-auto text-lg">
-        &emsp;The visualization data was pulled from CalEnviroScreen, a division
-        of the California government focused on environmental data and science.
-        The visualization was created from CalEnviroScreen’s 2018 census. As you
-        can see, the airport’s surrounding communities, by zip code, have
-        varying degrees of air pollution scores. The darker-colored communities
-        mean that there are more fine air particles in the air, which means that
-        the community is at a higher risk of developing respiratory and other
-        bodily illnesses from exposure to air pollution. Interestingly, the
-        communities directly surrounding the airport have less pollution than
-        some of the airports to the east of LAX. However, after investigations,
-        the answer became quite clear. The communities east of the airport are
-        in the direction of the airport’s downwind, which is the direction the
-        wind blows from the airport, carrying any air particles along the way.
-        The downwind can carry the airport’s pollutants miles away from the
-        airport’s location. This explains why the communities east of the
-        airport are receiving such high levels of air pollution. These
-        communities are also very dense communities that are simultaneously
-        suffering from high air pollution from dense traffic, only aggravated by
-        the fact that they are downwind from the airport. We also found that
-        these communities are predominantly black and suffer from economic
-        disparity. Take a look at the poverty levels of LAX’s surrounding
-        communities:
-      </p>
-      <p className="mt-16 w-9/12 m-auto text-lg">
-        &emsp;As can be seen, not only do the communities have a high air
-        pollutant score, but they are also communities suffering from poverty.
-        All this data reveals that these communities are unable to get out of
-        their situation due to their relatively low economic status, which
-        forces them to dedicate more time to making a living than to championing
-        better living conditions and better air quality. When people are
-        struggling to make ends meet, they will become complacent to issues that
-        affect them indirectly, even when these issues will only cause even
-        worse problems in the future if they continue to ignore them. Airport
-        pollution is one of these issues. Communities must not become complacent
-        and should advocate to obtain government assistance in things like
-        cleaning the air or finding ways to mitigate the travel of air
-        pollutants from the airport down to the communities. Aside from air
-        pollution, there is also noise pollution from airports to surrounding
-        communities, and not so coincidentally, it affects the same communities
-        that airport air pollution effects. This is truly not coincidental,
-        because airports designate routine routes for planes to stick to and
-        these routes overlap certain communities way more than others. For
-        example, Monterey Park, a community in east Los Angeles, experiences a
-        huge overlap with airplane flight routes, which incidentally means they
-        have high noise pollution and measures have been implemented to mitigate
-        the impacts of noise from LAX. Take a look at the following contour map
-        provided by LAWA (Los Angeles World Airports) summarizing the noise
-        contour of the LAX air traffic.
-      </p>
-      <Image
-        src="/noise contour map.png"
-        alt="airport contour map lax"
-        width={1664}
-        height={1090}
-        className="w-10/12 h-auto m-auto mt-12"
-      />
-      <p className="mt-16 w-9/12 m-auto text-lg">
-        &emsp;As you can see, the noise contour map affects communities directly
-        east of the airport the most. As previously stated, these communities
-        already suffer from economic disparity and air pollution, but now we see
-        that they also suffer from noise pollution from the airports. Overall,
-        they are victims of multiple offenses by the airport, and there has not
-        been any news on addressing these issues.
+        &emsp;In regards to the impact that airports have on their surrounding
+        communities, we hope to address the public health concerns and the
+        policy and regulation needs for air and noise pollution by looking into
+        the documentation of health issues and economic status of communities
+        surrounding the Los Angeles International Airport. With its high
+        population and rich cultural diversity, LAX provides a unique and
+        complex backdrop for our research due to it being a major hub for
+        international and domestic flights. As one of the busiest airports
+        globally, the sheer volume of air traffic along with the ground
+        transportation related to the airport provides a comprehensive view of
+        the overall impact that airport operations have on local communities.
+        <br />
+        <br />
+        &emsp;In looking into how social dynamics affect air travel decisions of
+        marginalized communities, we want to raise awareness for the minority
+        groups facing air travel discrimination, notably during the boarding
+        process of a flight. There was very little openly available data
+        regarding passenger’s demographics for flights as well as research and
+        studies dedicated to this subject matter, which shows that the voices of
+        those who face air travel discrimination are silenced. The Government
+        Accountability Office emphasizes the need to prevent unlawful profiling
+        at the Transportation Security Administration, which is something that
+        our research hopes to address by looking into the inherent biases of the
+        TSA’s operational procedure.
+        <br />
+        <br />
+        &emsp;Overall, we want to show how the medium of air travel exposes
+        different discriminations that are shown in both social dynamics and
+        wealth disparities. With each of our research questions, we seek to
+        advocate for sustainable policies to mitigate air and noise pollution
+        and to amplify the voices of marginalized communities who have faced
+        discrimination during the boarding process. Through our investigations
+        into the documentation of social dynamics of the surrounding communities
+        of LAX and the demographics of passengers facing air travel
+        discrimination, we strive to advocate for systemic changes within
+        airport operations. Ultimately, our research aims to foster a more
+        inclusive air travel environment by underscoring the need to dismantle
+        the disparities perpetuated by the airline industry.
       </p>
     </div>
   );
