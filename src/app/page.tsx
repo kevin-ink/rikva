@@ -92,8 +92,8 @@ export default function Home() {
                 className="bg-slate-300/75 top-0 absolute flex flex-col items-center justify-center h-screen w-screen"
               >
                 <h1 className="text-5xl w-10/12">
-                  2018, there were upwards of 1,100 million scheduled passengers
-                  in the U.S. alone.
+                  In 2018, there were upwards of 1,100 million scheduled
+                  passengers in the U.S. alone.
                 </h1>
                 <div className="w-10/12 text-right">
                   <p>-Bureau of Transportation Statistics</p>

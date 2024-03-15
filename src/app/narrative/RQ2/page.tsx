@@ -133,16 +133,6 @@ export default function RQ2() {
         not completely deprived of their air traveling options.
         <br />
         <br />
-        &emsp;In 2013, TSA launched a study on passengers referred to secondary
-        scrutiny, intending to monitor compliance and prevent unlawful
-        profiling. Nevertheless, the study was terminated in 2017 and no
-        analysis was conducted (Government Accountability Office, 2019). The
-        silence of data uncovering the discriminations towards certain
-        marginalized groups makes it very difficult to properly protect their
-        travel freedom by subjugating those communities to reduced mobility if
-        not completely deprived of their air traveling options.
-        <br />
-        <br />
         &emsp;In conclusion, while airports are essential for global and
         domestic connectivity, they also present challenges for marginalized
         individuals due to the inherent biases in their operational procedures.

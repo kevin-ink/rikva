@@ -18,17 +18,30 @@ export default function Timeline() {
           >
             <h1 className="text-4xl font-roboto_mono">TIMELINE</h1>
             <p className="font-inter w-10/12 mt-10 text-lg text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Pellentesque id nibh tortor id aliquet lectus proin. Sed augue
-              lacus viverra vitae. Nulla facilisi cras fermentum odio eu feugiat
-              pretium. Phasellus vestibulum lorem sed risus ultricies. Turpis
-              cursus in hac habitasse platea dictumst quisque. Porta nibh
-              venenatis cras sed. Vitae nunc sed velit dignissim sodales. Quis
-              auctor elit sed vulputate mi sit. Neque vitae tempus quam
-              pellentesque nec nam aliquam sem et. Velit euismod in pellentesque
-              massa. Condimentum mattis pellentesque id nibh tortor id aliquet.
-              Turpis massa tincidunt dui ut ornare lectus.
+              The following is a timeline regarding the evolution of airplane
+              policy. Some important facts to take note of is that the airplane
+              was first invented in 1903 yet the first major policy to be put in
+              place wasn’t until 1932, where flight inspections became a
+              necessary part of everyday flight travel. It would take a while
+              for many more policies to be enacted, with the biggest one being
+              the implementation of the Transportation Security Administration
+              (TSA) after the attacks of 9/11. For social change in the airline
+              industry specifically, the National Air and Space Museum writes,
+              “African Americans could choose to fly, but few did. Many airport
+              facilities were segregated and discrimination was widespread.
+              While the airlines themselves were not legally segregated,
+              airports often were. Throughout the South, inferior airport
+              accommodations discouraged African Americans from flying.
+              Complaints to the airlines about discrimination proved fruitless.
+              The airlines didn’t control the municipally owned airports they
+              served and did not wish to get involved for fear of losing white
+              customers. Until the Civil Rights movement began to bring about
+              change, air travel remained mostly for white people.” The social
+              change specific to African Americans was coupled with the Civil
+              Rights Movement. While not directly stated, it is important to
+              mention that with escalating prices - where the average flight is
+              no longer $5 - flight becomes increasingly exclusive, transforming
+              air transportation into a luxury privilege.
             </p>
             <button
               onClick={() => setpopupVisbility(false)}
