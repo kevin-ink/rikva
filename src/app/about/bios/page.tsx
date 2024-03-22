@@ -15,7 +15,7 @@ export default function Bios() {
     },
   };
   return (
-    <div className="w-screen h-fit pt-16 flex flex-col justify-center items-center">
+    <div className="w-screen h-fit min-h-screen pt-16 flex flex-col justify-center items-center">
       <div
         className="relative flex flex-row justify-between rounded shadow-lg border-1 border-black font-comfortaa text-2xl w-2/6 cursor-pointer"
         onClick={toggleText}
