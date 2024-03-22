@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="flex flex-col h-auto w-screen items-center max-w-screen min-h-screen">
+    <div className="flex flex-col h-auto w-screen min-h-screen items-center max-w-screen min-h-screen">
       <div className="bg-flight-pattern bg-bottom bg-fixed bg-cover h-screen w-screen">
         <motion.div
           initial={{ scaleX: 1 }}
