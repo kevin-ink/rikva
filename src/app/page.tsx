@@ -94,7 +94,7 @@ export default function Home() {
             height={2160}
             src={currentImage}
             alt="Airplane frames"
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "contain" }}
           />
           <AnimatePresence>
             {quote && (

@@ -136,7 +136,7 @@ export default function NavBar() {
   return (
     <div
       onMouseLeave={handleMouseLeave}
-      className={`fixed flex flex-col w-full h-auto z-20`}
+      className={`fixed flex flex-col max-w-screen w-screen h-auto z-20`}
     >
       <motion.div
         initial={false}
