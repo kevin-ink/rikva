@@ -46,7 +46,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${dm_sans.variable} ${inter.variable} ${roboto_mono.variable}
-        ${comfortaa.variable} bg-gradient-to-b from-sky-100 to-white`}
+        ${comfortaa.variable} bg-gradient-to-b from-sky-100 to-white w-screen max-w-screen overflow-hidden`}
       >
         {mobile ? (
           <Mobile_WIP />
