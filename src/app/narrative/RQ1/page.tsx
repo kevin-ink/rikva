@@ -59,15 +59,20 @@ export default function RQ1() {
         the residential population near a Brazilian airport: A perspective based
         on literature review&quot;. The study explains that fine air particles
         contribute to dangerous effects on people&#39;s health and is one of the
-        leading causes of cardiovascular and respiratory illnesses. In fact,
-        &quot;Air pollution is widely recognized as a risk factor for
+        leading causes of cardiovascular and respiratory illnesses.
+      </p>
+      <p className="bg-sky-300 p-5 w-9/12 mx-auto mt-10 rounded">
+        In fact, &quot;Air pollution is widely recognized as a risk factor for
         cardiovascular and respiratory diseases… It was classified as
         carcinogenic to humans (general pollution, particulate matter and
         diesel) by the International Agency for Research on Cancer (IARC), a
         body linked to the World Health Organization (WHO)&quot; (Chiodo et. al,
-        2019). The study assembled various other studies on air pollution in
-        airports on surrounding air and analyzed their processes to come up with
-        a conclusion on the mortality of air particles created by airports. The
+        2019).
+      </p>
+      <p className="mt-10 w-9/12 m-auto text-lg">
+        The study assembled various other studies on air pollution in airports
+        on surrounding air and analyzed their processes to come up with a
+        conclusion on the mortality of air particles created by airports. The
         study concluded that “the majority of their conclusions corroborate the
         vast literature that consistently attests exposure to air pollution is
         detrimental to human health” (Chiodo et. al, 2019). As the study
@@ -90,28 +95,33 @@ export default function RQ1() {
         census, and the air pollution scores for each community are a combined
         calculation of exposure to pollutants and environmental effects. As you
         can see, the airport&#39;s surrounding communities, by zip code, have
-        varying degrees of air pollution scores. The darker-colored communities
-        mean that there are more fine air particles in the air, which means that
-        the community is at a higher risk of developing respiratory and other
-        bodily illnesses from exposure to air pollution. Interestingly, the
-        communities directly surrounding the airport have less pollution than
-        some of the airports to the east of LAX. This is an interesting
-        phenomenon, but is easily explainable by the fact that most of the
-        airport&#39;s pollution is blown downwind which causes the particles to
-        settle downwind from the airport&#39;s location. The airport&#39;s
-        downwind happens to be east of the airport, which is supported by the
-        fact that communities east of the airport are much darker. A study by
-        Neelakshi Hudda et al. measured the spatial pattern of particle number
-        (PN) concentrations downwind from the Los Angeles International Airport
-        (LAX), and found that there were 4-fold concentrations of pollutant
-        particles 10km downwind from the airport (Hudda et. al, 2014). The study
-        concluded that, “This large, previously undiscovered spatial extent of
-        the air quality impacts downwind of major airports may mean a
-        significant fraction of urban dwellers living near airports likely
-        receive most of their outdoor PN exposure from airports rather than
-        roadway traffic” (Hudda et. al, 2014) . This is significant as it could
-        explain why current policies on airport pollution may not account for
-        the downwind settling of pollutants.
+        varying degrees of air pollution scores.
+        <p className="bg-sky-300 p-5 w-9/12 mx-auto mt-10 rounded">
+          The darker-colored communities mean that there are more fine air
+          particles in the air, which means that the community is at a higher
+          risk of developing respiratory and other bodily illnesses from
+          exposure to air pollution.
+        </p>
+      </p>
+      <p className="mt-10 w-9/12 m-auto text-lg">
+        Interestingly, the communities directly surrounding the airport have
+        less pollution than some of the airports to the east of LAX. This is an
+        interesting phenomenon, but is easily explainable by the fact that most
+        of the airport&#39;s pollution is blown downwind which causes the
+        particles to settle downwind from the airport&#39;s location. The
+        airport&#39;s downwind happens to be east of the airport, which is
+        supported by the fact that communities east of the airport are much
+        darker. A study by Neelakshi Hudda et al. measured the spatial pattern
+        of particle number (PN) concentrations downwind from the Los Angeles
+        International Airport (LAX), and found that there were 4-fold
+        concentrations of pollutant particles 10km downwind from the airport
+        (Hudda et. al, 2014). The study concluded that, “This large, previously
+        undiscovered spatial extent of the air quality impacts downwind of major
+        airports may mean a significant fraction of urban dwellers living near
+        airports likely receive most of their outdoor PN exposure from airports
+        rather than roadway traffic” (Hudda et. al, 2014) . This is significant
+        as it could explain why current policies on airport pollution may not
+        account for the downwind settling of pollutants.
         <br></br>
         <br />
         &emsp;Interesting, we also found that these affected communities are

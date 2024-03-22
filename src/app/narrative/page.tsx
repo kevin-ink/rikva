@@ -1,32 +1,8 @@
 "use client";
-import { useEffect, useRef } from "react";
-import { TableauViz } from "@tableau/embedding-api";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Narrative() {
-  // const tableauVizRef = useRef<HTMLDivElement>(null);
-  // const tableauVizRef2 = useRef<HTMLDivElement>(null);
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     if (!tableauVizRef.current || !tableauVizRef2.current) return;
-  //     const viz = new TableauViz();
-  //     viz.src =
-  //       "https://public.tableau.com/views/lax_pollution/Sheet1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link";
-  //     tableauVizRef.current.appendChild(viz);
-  //     const viz_2 = new TableauViz();
-  //     viz_2.src =
-  //       "https://public.tableau.com/views/poverty_intensity/Sheet1?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link";
-  //     tableauVizRef2.current.appendChild(viz_2);
-  //     const tableau_ref = tableauVizRef.current;
-  //     const tableau_ref2 = tableauVizRef2.current;
-  //     return () => {
-  //       tableau_ref.innerHTML = "";
-  //       tableau_ref2.innerHTML = "";
-  //     };
-  //   }
-  // }, []);
-
   return (
     <div className="w-screen min-h-screen flex flex-col">
       <h1 className="w-full h-48 font-inter text-4xl flex flex-row items-center justify-center text-center bg-sky-400 font-bold mt-32">
@@ -124,8 +100,8 @@ export default function Narrative() {
         profiling at the Transportation Security Administration, which is
         something that our research hopes to address by looking into the
         inherent biases of the TSA&#39;s operational procedure.
-        <br />
-        <br />
+      </p>
+      <p className="bg-sky-300 p-5 w-9/12 mx-auto mt-10 rounded">
         &emsp;Overall, we want to show how the medium of air travel exposes
         different discriminations that are shown in both social dynamics and
         wealth disparities. With each of our research questions, we seek to
@@ -139,6 +115,12 @@ export default function Narrative() {
         inclusive air travel environment by underscoring the need to dismantle
         the disparities perpetuated by the airline industry.
       </p>
+      <Link href="/narrative/RQ1" className="w-fit m-auto mt-10">
+        <button className="text-3xl text-sky-500 hover:underline">
+          Next Section: How does a large, busy airport impact it&apos;s
+          surrounding communities?
+        </button>
+      </Link>
     </div>
   );
 }
