@@ -22,7 +22,7 @@ export default function About() {
           style={{
             originX: 1,
           }}
-          className="w-screen h-screen bg-sky-100 absolute t-0"
+          className="w-full h-full bg-sky-100 absolute t-0"
         ></motion.div>
         <AnimatedHeader />
       </div>
