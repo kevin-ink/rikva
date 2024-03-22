@@ -94,14 +94,13 @@ export default function NavBar() {
         className={`grid grid-cols-3 bg-sky-600 shadow-[0_8px_6px_-6px_rgba(0,0,0,0.25)]`}
       >
         <div className={`grid col-start-2 col-end-3 grid-cols-3 grid-rows-3`}>
-          {/*Background*/}
+          {/*Data*/}
           <NavLink
             text="Timeline"
             href={"/timeline"}
             colStart={1}
             rowStart={1}
           />
-          <NavLink text="Data" href={"/WIP"} colStart={1} rowStart={2} />
 
           {/*Narrative*/}
           <NavLink
@@ -154,7 +153,7 @@ export default function NavBar() {
           </Link>
         </div>
         <div className={`flex flex-row col-start-2 col-end-3 w-full`}>
-          <NavLink text="Background" href={"/WIP"} onHover={handleMouseEnter} />
+          <NavLink text="Data" href={"/WIP"} onHover={handleMouseEnter} />
           <NavLink
             text="Narrative"
             href={"/narrative"}

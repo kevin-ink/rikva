@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <div className="flex flex-col h-auto w-screen items-center max-w-screen min-h-screen">
-      <div className="bg-flight-pattern bg-bottom bg-fixed bg-cover h-5/6 w-screen">
+      <div className="bg-flight-pattern bg-bottom bg-fixed bg-cover h-screen w-screen">
         <motion.div
           initial={{ scaleX: 1 }}
           animate={{
@@ -22,7 +22,7 @@ export default function About() {
           style={{
             originX: 1,
           }}
-          className="w-full h-4/6 bg-sky-100 absolute top-0"
+          className="w-full h-screen bg-sky-100 absolute top-0"
         ></motion.div>
         <AnimatedHeader />
       </div>

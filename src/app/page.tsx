@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import {
   motion,
@@ -5,8 +6,7 @@ import {
   useMotionValueEvent,
   AnimatePresence,
 } from "framer-motion";
-import { useState } from "react";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import Icon from "@mdi/react";
 import { mdiMouseMoveDown } from "@mdi/js";
 import Link from "next/link";
@@ -39,6 +39,20 @@ export default function Home() {
     }
     setCurrentImage(getImageUrl(currFrame));
   });
+
+  useEffect(() => {
+    // Function to preload images
+    const preloadImage = (src: string) => {
+      const img = new Image();
+    };
+
+    // Loop through the range of frame numbers and preload each image
+    for (let frame = 1; frame <= 160; frame++) {
+      const frameString = frame.toString().padStart(3, "0"); // Assuming you need leading zeros
+      const imagePath = `/window_frames/ezgif-frame-${frameString}.jpg`;
+      preloadImage(imagePath);
+    }
+  }, []);
 
   function getImageUrl(frameNumber: number) {
     const frameString = frameNumber.toString().padStart(3, "0");
@@ -75,14 +89,12 @@ export default function Home() {
           )}
         </AnimatePresence>
         <div className="sticky top-0 w-screen h-screen">
-          <Image
+          <img
             width={3840}
             height={2160}
             src={currentImage}
             alt="Airplane frames"
             style={{ objectFit: "cover" }}
-            unoptimized
-            priority
           />
           <AnimatePresence>
             {quote && (
