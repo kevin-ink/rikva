@@ -116,7 +116,6 @@ export default function NavBar() {
             colStart={2}
             rowStart={2}
           />
-          <NavLink text="RQ3" href={"/WIP"} colStart={2} rowStart={3} />
 
           {/*About*/}
           <NavLink
