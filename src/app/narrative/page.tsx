@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import { TableauViz } from "@tableau/embedding-api";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Narrative() {
   // const tableauVizRef = useRef<HTMLDivElement>(null);
@@ -28,10 +29,10 @@ export default function Narrative() {
 
   return (
     <div className="w-screen min-h-screen flex flex-col">
-      <h1 className="w-full h-48 font-inter text-4xl flex flex-row items-center justify-center text-center bg-sky-500 mt-32">
+      <h1 className="w-full h-48 font-inter text-4xl flex flex-row items-center justify-center text-center bg-sky-400 font-bold mt-32">
         Place in Literature
       </h1>
-      <p className="mt-16 w-9/12 m-auto text-lg">
+      <div className="mt-16 w-9/12 m-auto text-lg">
         &emsp;Upon browsing the scholarly web for any literature on airport
         noise and air pollution, we were met with dismal results. To our
         surprise, there were very few articles published specifically about
@@ -43,24 +44,29 @@ export default function Narrative() {
         communities especially communities downwind from the airport. However,
         most of the scholarly literature is very scientifically oriented and
         does not discuss the more humanistic aspects of airport pollution. This
-        is why our group seeks to contextualize the impact of pollution in a
-        humanistic way by asking questions about how the pollution may impact
-        the livelihoods of the local communities and how they may not be able to
-        escape the pollution themselves, with government regulations being their
-        only option. We would like to acknowledge though that airport-specific
-        pollution data is very hard to track because airports consequently
-        create very busy roads and car traffic which contribute to local
-        pollution around the airport. Thus, there remain questions about whether
-        airplanes are emitting more pollution than the cars that drive in and
-        out of the airport, and whether regulations should be focused on road
-        traffic or airplane traffic in regards to reducing air pollution.
-        <br /> <br />
+        is why we seek to contextualize the impact of pollution in a humanistic
+        way by asking questions about how aiport pollution may impact the
+        livelihoods of surrounding local communities. More specifically, we ask
+        how the pollution from a large, busy airport in the U.S. may impact
+        it&#39;s surrounding communities.
+        <br />
+        <br />
+        <p className="bg-sky-300 p-5">
+          &emsp;We would like to acknowledge though that airport-specific
+          pollution data is very hard to track because airports consequently
+          create very busy roads and car traffic which contribute to local
+          pollution around the airport. Pollution data collected around airports
+          do not differentiate between these different types of pollution.
+          Regardless, both types of pollution originate from airport operations
+          and so the data remains meaningful.
+        </p>
+        <br />
         &emsp;For discrimination experiences during air travel, we are also
         surprised to find out there is very limited publicly available data
         directly collecting unfair treatment during air travel experiences and
-        passengers’ demographic information, nor scholarly articles that
+        passengers&#39; demographic information, nor scholarly articles that
         directly discuss such a topic. However, we were able to scrape the data
-        from the Bureau of Transportation Statistics’s annual air travel
+        from the Bureau of Transportation Statistics&#39;s annual air travel
         consumer reports from 2014 to 2018 on discrimination complaints and
         thereby probe into the silenced communities who experience bias and
         prejudices during air travel. Sex minorities, such as transgender and
@@ -75,8 +81,8 @@ export default function Narrative() {
         well as social stigmatization post 9-11 era. Those pieces of literature
         serve as supporting evidence to our arguments regarding reduced mobility
         by flights as well as discrimination during air travel processes.
-      </p>
-      <h1 className="w-full h-48 font-inter text-4xl flex flex-row items-center justify-center text-center bg-sky-500 mt-32">
+      </div>
+      <h1 className="w-full h-48 font-inter text-4xl flex flex-row items-center justify-center text-center bg-sky-400 font-bold mt-32">
         Significance
       </h1>
       <p className="mt-16 w-9/12 m-auto text-lg">
@@ -111,13 +117,13 @@ export default function Narrative() {
         marginalized communities, we want to raise awareness for the minority
         groups facing air travel discrimination, notably during the boarding
         process of a flight. There was very little openly available data
-        regarding passenger’s demographics for flights as well as research and
-        studies dedicated to this subject matter, which shows that the voices of
-        those who face air travel discrimination are silenced. The Government
-        Accountability Office emphasizes the need to prevent unlawful profiling
-        at the Transportation Security Administration, which is something that
-        our research hopes to address by looking into the inherent biases of the
-        TSA’s operational procedure.
+        regarding passenger&#39;s demographics for flights as well as research
+        and studies dedicated to this subject matter, which shows that the
+        voices of those who face air travel discrimination are silenced. The
+        Government Accountability Office emphasizes the need to prevent unlawful
+        profiling at the Transportation Security Administration, which is
+        something that our research hopes to address by looking into the
+        inherent biases of the TSA&#39;s operational procedure.
         <br />
         <br />
         &emsp;Overall, we want to show how the medium of air travel exposes

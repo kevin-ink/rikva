@@ -17,13 +17,7 @@ export default function FullProfile({ name, bio }: FullProfileProps) {
       />
       <div className="flex flex-col m-1 w-3/4">
         <p className="text-xl font-comfortaa">{name}</p>
-        <p className="text-md font-inter">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Pellentesque id nibh tortor id aliquet lectus proin. Sed augue lacus
-          viverra vitae. Nulla facilisi cras fermentum odio eu feugiat pretium.
-          Phasellus vestibulum lorem sed risus ultricies.
-        </p>
+        <p className="text-md font-inter">{bio}</p>
       </div>
     </div>
   );
