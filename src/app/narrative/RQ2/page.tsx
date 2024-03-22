@@ -17,7 +17,7 @@ const TableauVizComponentNoSSR6 = dynamic(() => import("./vis6"), {
 export default function RQ2() {
   return (
     <div className="w-screen min-h-screen flex flex-col">
-      <h1 className="w-full h-48 font-inter text-3xl flex flex-row items-center justify-center text-center bg-sky-500 mt-32">
+      <h1 className="w-full h-48 font-inter font-bold text-3xl flex flex-row items-center justify-center text-center bg-sky-500 mt-32">
         Research Question 2: In what ways are social dynamics, such as
         experiences of discrimination, affecting air travel decisions of
         marginalized communities (based on race, gender, and/or religious
