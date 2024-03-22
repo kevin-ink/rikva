@@ -4,6 +4,8 @@ import AnimatedHeader from "./animatedHeader";
 import { profiles, Profile } from "./profiles";
 import Milestones from "./components/milestones";
 import { motion } from "framer-motion";
+import Acknowledgements from "./components/acknowledgements";
+import FAQ from "./components/faq";
 
 export default function About() {
   return (
@@ -38,8 +40,9 @@ export default function About() {
       </div>
       <Milestones />
       <div className="p-10 bg-white grid grid-rows-3 grid-cols-3 w-full h-screen">
-        {/* <FAQ />
         <Acknowledgements />
+        <FAQ />
+        {/* 
         <BibFooter /> */}
       </div>
     </div>
