@@ -147,7 +147,7 @@ export default function NavBar() {
         }}
         className={`grid grid-cols-3 w-full h-fit bg-sky-600/75 shadow-[0_8px_6px_-6px_rgba(0,0,0,0.25)]`}
       >
-        <div className="flex items-center col-start-1 col-end-2 pl-10 font-bold text-xl">
+        <div className="flex items-center col-start-1 col-end-2 ml-10 font-bold text-xl">
           <Link href={"/"}>
             <h1 className="w-fit h-fit hover:cursor-pointer">RIKVA</h1>
           </Link>
