@@ -87,13 +87,13 @@ const Accordion = ({ i, expanded, setExpanded }: AccordionProps) => {
   );
 };
 
-const accordionIds = [0, 1];
+const accordionIds = [0, 1, 2];
 const accordionIdsToFAQ: FAQContent = {
   0: {
     Q: "Where are the member bios and individual contributions?",
     A: (
       <p>
-        You can find the member bios&nbsp;
+        You can find the member bios and their contributions&nbsp;
         <a href="/about/bios" className="font-bold underline text-sky-500">
           here
         </a>
@@ -106,6 +106,19 @@ const accordionIdsToFAQ: FAQContent = {
     A: (
       <p>
         You can find the annotated bilbiography&nbsp;
+        <a href="/WIP" className="font-bold underline text-sky-500">
+          here
+        </a>
+        .
+      </p>
+    ),
+  },
+  2: {
+    Q: "Where is the works cited?",
+    A: (
+      <p>
+        You can find the works cited page in the same page as the annotated
+        bibiliography,&nbsp;
         <a href="/WIP" className="font-bold underline text-sky-500">
           here
         </a>

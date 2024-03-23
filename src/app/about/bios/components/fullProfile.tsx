@@ -1,6 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import images from "../../images";
 
 type FullProfileProps = {
   name: string;
@@ -28,11 +29,12 @@ export default function FullProfile({
   return (
     <div className="flex flex-row w-1/2 h-fit">
       <Image
-        src="https://placehold.co/200x250.png"
-        className="border-2 rounded shadow-sm m-1"
+        src={images[name.split(" ")[0]]}
+        className="border-2 rounded shadow-sm"
         alt="Profile image of member"
         width={200}
         height={250}
+        style={{ objectFit: "cover", width: "200px", height: "250px" }}
       />
       <div className="flex flex-col m-1 w-3/4">
         <p className="text-xl font-comfortaa">{name}</p>

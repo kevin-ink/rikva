@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 import { useEffect } from "react";
+import images from "../images";
 
 type SimpleProfileProps = {
   name: string;
@@ -51,11 +52,12 @@ export default function SimpleProfile({ name, role, pos }: SimpleProfileProps) {
       className="flex flex-col justify-between w-fit h-fit"
     >
       <Image
-        src="https://placehold.co/200x250.png"
+        src={images[name.split(" ")[0]]}
         className="border-2 rounded shadow-sm"
         alt="Profile image of member"
         width={200}
         height={250}
+        style={{ objectFit: "cover", width: "200px", height: "250px" }}
       />
       <div className="flex flex-col">
         <span className="text-sm font-comfortaa text-left">{name}</span>
