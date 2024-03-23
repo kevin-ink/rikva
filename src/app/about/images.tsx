@@ -3,6 +3,7 @@ const images: Images = {
   Rahul: "/photos/rahul.PNG",
   Isabel: "/photos/isabel.png",
   Kevin: "/photos/kevin.jpeg",
+  Alan: "/photos/alan.png",
 };
 
 interface Images {

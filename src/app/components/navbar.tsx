@@ -125,7 +125,7 @@ export default function NavBar() {
           />
           <NavLink
             text="Bibliography"
-            href={"/WIP"}
+            href={"/about/bib"}
             colStart={3}
             rowStart={2}
           />
@@ -153,7 +153,7 @@ export default function NavBar() {
           </Link>
         </div>
         <div className={`flex flex-row col-start-2 col-end-3 w-full`}>
-          <NavLink text="Data" href={"/WIP"} onHover={handleMouseEnter} />
+          <NavLink text="Data" href={"/data"} onHover={handleMouseEnter} />
           <NavLink
             text="Narrative"
             href={"/narrative"}
