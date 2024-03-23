@@ -8,7 +8,7 @@ const TableauViz6 = () => {
     if (tableauVizRef.current) {
       const viz = new TableauViz();
       viz.src =
-        "https://public.tableau.com/views/2016-2018AirTravelData/Linechart?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link";
+        "https://public.tableau.com/views/Scheulde/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link";
       tableauVizRef.current.appendChild(viz);
       const tableau_vis = tableauVizRef.current;
       return () => {
