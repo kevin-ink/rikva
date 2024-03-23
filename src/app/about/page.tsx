@@ -6,6 +6,7 @@ import Milestones from "./components/milestones";
 import { motion } from "framer-motion";
 import Acknowledgements from "./components/acknowledgements";
 import FAQ from "./components/faq";
+import FooterPic from "./components/footerpic";
 
 export default function About() {
   return (
@@ -42,8 +43,7 @@ export default function About() {
       <div className="p-10 bg-white grid grid-rows-3 grid-cols-3 w-full h-screen">
         <Acknowledgements />
         <FAQ />
-        {/* 
-        <BibFooter /> */}
+        <FooterPic />
       </div>
     </div>
   );
