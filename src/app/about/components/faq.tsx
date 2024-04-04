@@ -106,7 +106,7 @@ const accordionIdsToFAQ: FAQContent = {
     A: (
       <p>
         You can find the annotated bilbiography&nbsp;
-        <a href="/WIP" className="font-bold underline text-sky-500">
+        <a href="/about/bib" className="font-bold underline text-sky-500">
           here
         </a>
         .
@@ -119,7 +119,7 @@ const accordionIdsToFAQ: FAQContent = {
       <p>
         You can find the works cited page in the same page as the annotated
         bibiliography,&nbsp;
-        <a href="/WIP" className="font-bold underline text-sky-500">
+        <a href="/about/bib" className="font-bold underline text-sky-500">
           here
         </a>
         .
